@@ -1,0 +1,123 @@
+.login-form {
+  display: grid;
+  gap: 22px;
+  width: 100%;
+}
+
+.login-form__heading {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.login-form__heading h2 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 2.5vw, 36px);
+  line-height: 1.4;
+}
+
+.login-form__heading p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.login-form__field {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.login-form label {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.login-form__input-wrap {
+  position: relative;
+}
+
+.login-form__input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 54px;
+  padding: 12px 16px 12px 48px;
+  border: 1px solid var(--color-muted);
+  border-radius: 10px;
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-navy) 4%, var(--color-surface));
+}
+
+.login-form input::placeholder {
+  color: var(--color-muted);
+  opacity: 1;
+}
+
+.login-form input:focus {
+  border-color: var(--color-navy);
+}
+
+.login-form__input-wrap--password input {
+  padding-right: 56px;
+}
+
+.login-form__password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  color: var(--color-muted);
+  background: transparent;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-form__submit {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 6px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-navy);
+  border-radius: 10px;
+  color: var(--color-surface);
+  background: var(--color-navy);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-form__submit:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--color-navy) 88%, black);
+}
+
+.login-form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.login-form [role='alert'] {
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 6px 6px 0;
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-gold) 12%, var(--color-surface));
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}

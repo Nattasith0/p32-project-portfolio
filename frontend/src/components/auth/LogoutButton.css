@@ -1,0 +1,25 @@
+.logout-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.logout-actions p {
+  margin: 0;
+}
+
+.logout-actions button {
+  justify-self: start;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--color-navy);
+  border-radius: 8px;
+  color: var(--color-navy);
+  background: var(--color-surface);
+  cursor: pointer;
+}
+
+.logout-actions button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "p32-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "next dev --hostname localhost --port 5173",
+    "build": "next build",
+    "start": "next start --hostname localhost --port 5173",
+    "lint": "oxlint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --test test/*.test.js"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "oxlint": "1.90.0",
+    "typescript": "5.9.3",
+    "tsx": "4.23.15"
+  }
+}

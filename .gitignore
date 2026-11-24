@@ -1,0 +1,20 @@
+# แพ็กเกจที่ติดตั้ง
+node_modules/
+
+# ค่าตั้งเฉพาะเครื่องและรหัสลับ
+.env
+.env.*
+!.env.example
+!.env.migrations.example
+!.env.seed.example
+
+# บันทึกการทำงาน
+*.log
+
+# ผลลัพธ์จากการ build และทดสอบ
+dist/
+coverage/
+
+# ไฟล์อัปโหลดและข้อมูลสำรอง
+storage/
+backups/
